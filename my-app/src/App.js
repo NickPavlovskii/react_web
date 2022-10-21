@@ -11,50 +11,51 @@ import {useState} from "react";
 function App() {
  
 
+
   const [productItems, SetProdducts]= 
       useState([
           {
-              id: "1",
+              id: 1,
               name: "Adidas",
               opis: "Cartoon Astronaut T-Shorts",
-              prise: 720,
+              prise: 72,
               Star: 'star',
               img: '/products/f1.jpg'
   
   
           },
           {
-            id: "2",
+            id: 2,
             name: "Adidas",
             opis: "Cartoon Astronaut T-Shorts",
-            prise: 420,
+            prise: 42,
             Star: 'star',
             img: '/products/f2.jpg'
 
 
         },
         {
-          id: "3",
+          id: 3,
           name: "Adidas",
           opis: " Кроссовки adidas высокие",
-          prise: 320,
+          prise: 32,
           Star: 'star',
           img: '/products/f3.jpg'
 
           
       },
       {
-        id: "4",
+        id: 4,
         name: "Adidas",
         opis: " Кроссовки adidas высокие",
-        prise: 320,
+        prise: 52,
         Star: 'star',
         img: '/products/f5.jpg'
 
         
     },
     {
-      id: "5",
+      id: 5,
       name: "Adidas",
       opis: " Кроссовки adidas высокие",
       prise: 320,
@@ -63,10 +64,38 @@ function App() {
 
       
   },
-
-      ])
+  {
+    id: 6,
+    name: "Adidas",
+    opis: " Кроссовки adidas высокие",
+    prise: 320,
+    Star: 'star',
+    img: '/products/f7.jpg'
 
     
+},
+{
+  id: 7,
+  name: "Adidas",
+  opis: " Кроссовки adidas высокие",
+  prise: 320,
+  Star: 'star',
+  img: '/products/f8.jpg'
+
+  
+},  {
+  id: 8,
+  name: "Adidas",
+  opis: " Кроссовки adidas высокие",
+  prise: 320,
+  Star: 'star',
+  img: '/products/a1.jpg'
+
+  
+},
+      ])
+
+     
   
     return <div>  
     
@@ -74,6 +103,7 @@ function App() {
     <Hero/>
     <Feature/>
     <Product productItems={productItems}/>
+
 
     </div>
     

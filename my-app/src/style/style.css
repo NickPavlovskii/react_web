@@ -1,4 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@200;500;900&family=Open+Sans:wght@300&family=Roboto:wght@100&display=swap");
+
+
 * {
   margin: 0;
   box-sizing: border-box;
@@ -18,17 +20,18 @@
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 9999;
 }
 
 .logo {
-  width: 45%;
+  width: 100px;
 }
 
 #navbar {
   display: flex;
   align-items: center;
   justify-content: center;
-  z-index: 999;
+  
 }
 #navbar li {
   list-style: none;
@@ -132,9 +135,6 @@ p {
 
 .section-p1 {
   padding: 40px 80px;
-  
-  
-
 }
 
 #feature {
