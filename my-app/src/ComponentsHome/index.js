@@ -7,5 +7,6 @@ export{
     Heaader,
     Hero,
     Feature,
-    Product
+    Product,
+    // Newsletter
 }

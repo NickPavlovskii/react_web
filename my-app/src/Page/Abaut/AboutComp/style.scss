@@ -19,25 +19,12 @@
 	position: sticky;
 	top: 0;
 	left: 0;
-	z-index: 999;
 }
 .logo {
 	width: 45%;
 }
 
-  
-.sbag{
-	position: relative;
-	bottom: 18px;
-	left: 11px;
-  }
-  
-  
-  .caart{
-	position: relative;
-	top: 5px;
-   right: 5px;
-  }
+
 
 #navbar {
 	display: flex;
@@ -92,10 +79,8 @@
 #navbar li a.active {
 	color: #0ecdc0;
 }
-
-// -------------------------------hero-------------------------------------------
 #hero {
-	background: url("../img/pn.png");
+	background: url("../img/hero.png");
 	height: 90vh;
 	width: 100%;
 	background-size: cover;
@@ -226,16 +211,4 @@ p {
 	}
 }
 
-@media  (mzx-width:799px)
-{
-	 #navbar{
-		display:flex;
-		flex-direction: column;
-		align-items: flex-start;
-		justify-content: flex-start;
-		position: fixed;
-		height: 10vh;
-	}
-		
-	
-}
+

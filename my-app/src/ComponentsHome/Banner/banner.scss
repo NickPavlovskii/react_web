@@ -1,0 +1,187 @@
+.selection-m1{
+   margin: 40px 0;
+   
+}
+.section-p1 {
+	padding: 20px 45px;
+  margin: 60px 0;
+}
+
+#Banner{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ text-align: center;
+ background-image: url("./img/b2.jpg");
+
+ width: 100%;
+ height: 40vh;
+ background-size:cover ;
+ background-position: center;
+
+h4{
+   color: white;
+   font-size: 16px;
+
+}
+ h2{
+   color: white;
+   font-size: 30px;
+   padding: 10px 0;
+
+   span{
+   color: #ef3636;
+   }
+ }
+ button:hover{
+   background: #088178;
+   color: #fff;
+ }
+
+}
+ button.normal{
+   
+   font-size: 14px;
+   font-weight: 600;
+   padding: 15px 30px;
+   background-color: #fff;
+   border-radius: 4px;
+   cursor: pointer;
+   border: none;
+   outline: none;
+   transition: 0,02s;
+ }
+
+
+ /*-----------------Sm_banner-----------*/
+
+#Sm_banner{
+  display: flex;
+  justify-content: space-between;
+  
+ 
+ .banner-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  background-image: url("img/b17.jpg");
+ padding: 30px;
+  min-width: 580px;
+  height: 50vh;
+  background-size:cover ;
+  background-position: center;
+
+  
+
+    h4{
+      color:#fff;
+      font-size:20px;
+      font-weight: 300;
+
+
+}
+h2{
+  color:#fff;
+  font-size:28px;
+  font-weight: 800;
+
+
+}
+span{
+  color:#fff;
+  font-size: 14px;
+  font-weight: 500;
+padding-bottom: 15px;
+}
+
+button.white{
+   
+  font-size: 14px;
+  font-weight: 600;
+  padding: 15px 30px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid;
+  outline: none;
+  transition: 0,02s;
+  background-color: transparent;
+}
+
+
+}
+.banner-box2{
+  background-image: url("img/b10.jpg");
+
+}
+}
+
+#Sm_banner .banner-box:hover button{
+
+  background: #09aca2;
+  border:  1px solid #09aca2;
+}
+
+
+
+ /*-----------------banner3-----------*/
+
+
+
+ #Banner3{
+  
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0px 40px ;
+  position: relative;
+  bottom: 52px;
+
+  .banner-box { 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  text-align: center;
+  background-image: url("img/b7.jpg");
+ padding: 30px;
+  min-width: 30%;
+  height: 30vh;
+  background-size:cover ;
+  background-position: center;
+  padding: 30px;
+  margin-bottom: 20px;
+  }
+  h2{
+    color: white;
+    font-size: 22px;
+    font-weight: 900;
+  
+  }
+  h3{
+    color: rgb(224, 19, 19);
+    font-size: 20px;
+    font-weight: 500;
+    position: relative;
+    bottom: 10px;
+     
+  }
+
+  .T-shirt{
+     color: white;
+     background: blue;
+  }
+  .banner-box2{
+    background-image: url("img/b4.jpg");
+  
+  }
+  .banner-box3{
+    background-image: url("img/b18.jpg");
+  
+  }
+
+ }

@@ -1,10 +1,10 @@
 import React from 'react'
 import './Prodycts.css'
 import { FaCartPlus} from 'react-icons/fa';
+// import productItems from '/productItems'
 
 
-
-function Product ({productItems}) {
+function Product ({productItems,addToCart}) {
 
 
 
@@ -29,7 +29,10 @@ return(
                             <h5>{productItems.opis}</h5>
                             <h4 class='price'>$ {productItems.prise}</h4>
                             </div>
-                            <a href="" className='cart'><FaCartPlus /></a>
+                            
+                            <a  className='cart' onClick={()=> addToCart(productItems)}>
+                                
+                                <FaCartPlus /></a>
                              
                 </div>
                 
