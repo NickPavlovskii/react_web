@@ -7,7 +7,7 @@ import { BrowserRouter as Router, Routes, Route}
 import Home from './Page/Home/Home';
 import About from './Page/Abaut/Abaut';
 
-
+import Contact from './Page/Contact/Contact';
 
 
 
@@ -29,6 +29,8 @@ function App() {
         <Route exact path='/'  element={<Home />} />
         <Route path='/about' element={<About/>} />
        
+        <Route path='/Contact' element={<Contact/>} />
+        
     </Routes>
     </Router>
       

@@ -1,6 +1,7 @@
 import React from 'react'
 import './Prodycts.css'
 import { FaCartPlus} from 'react-icons/fa';
+import {AiOutlineHeart} from 'react-icons/ai';
 // import productItems from '/productItems'
 
 
@@ -11,7 +12,7 @@ function Product ({productItems,addToCart}) {
     
 return(
  <section id="product1" className="section-p1">
-   
+   <div className='heart'><AiOutlineHeart/></div>
     <h2>Featured Products</h2>
     <p>Summer Collection New Moden Design</p>
     

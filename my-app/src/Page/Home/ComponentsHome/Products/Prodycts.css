@@ -3,7 +3,11 @@
 
 
   
-
+.heart{
+  position: relative;
+  top: 25px;
+  left: 150px;
+}
 
   #product1{
     text-align: center;
