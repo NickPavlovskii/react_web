@@ -24,11 +24,15 @@
   width: 45%;
 }
 
+.sbag{
+	position: relative;
+	bottom: 20px;
+	left: 11px;
+  }
 
-
-.cart {
+.caart {
   position: relative;
-  top: 4px;
+ top: -2px;
   right: 5px;
 }
 #navbar {

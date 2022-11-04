@@ -1,6 +1,7 @@
 import React from 'react'
 import './Prodycts.css'
 import { FaCartPlus} from 'react-icons/fa';
+import {AiOutlineHeart} from 'react-icons/ai';
 // import productItems from '/productItems'
 
 
@@ -109,6 +110,7 @@ return(
                 
                    
                         <div className="pro">
+                           <div className='heart'><AiOutlineHeart/></div>
                             <img src={"./img/"+ productItems1.img}/> 
                             <div className='des'>
                             <h>{productItems1.name}</h>
@@ -118,9 +120,7 @@ return(
                            
                             </div>
                             
-                            <a  className='cart' onClick={()=> addToCart(productItems1)}>
-                                
-                                <FaCartPlus /></a>
+                            <a  onClick={()=> addToCart(productItems1)}> <i className='caaart'><FaCartPlus/></i> </a> 
                              
                 </div>
                 

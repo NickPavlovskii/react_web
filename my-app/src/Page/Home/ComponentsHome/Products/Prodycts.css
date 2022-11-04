@@ -4,9 +4,13 @@
 
   
 .heart{
-  position: relative;
-  top: 25px;
-  left: 150px;
+  position: absolute;
+  top: 30px;
+  left: 225px;
+}
+
+.heart:hover{
+  color: red;
 }
 
   #product1{
@@ -74,21 +78,24 @@ font-size: 12px;
     font-size: 15px;
   }
 
-  .cart{
+  .caaart{
     width: 30px;
     height: 30px;
     font-weight: 500;
    background: #e8f6ea;
-    border-radius: 50px;
+    border-radius: 100px;
     color: #028078;
    border: 1px solid #cce7d0;
   position: absolute;
   line-height: 40px;
-  bottom: 10px;
+  bottom: 20px;
   right: 20px;
   cursor: pointer;
-
   }
+
+
+
+
 
   
   #product1 .pro:hover {

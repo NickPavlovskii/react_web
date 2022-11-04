@@ -12,7 +12,7 @@ function Product ({productItems,addToCart}) {
     
 return(
  <section id="product1" className="section-p1">
-   <div className='heart'><AiOutlineHeart/></div>
+
     <h2>Featured Products</h2>
     <p>Summer Collection New Moden Design</p>
     
@@ -24,6 +24,7 @@ return(
                 
                    
                         <div className="pro">
+                             <div className='heart'><AiOutlineHeart/></div>
                             <img src={"./img/"+ productItems.img}/> 
                             <div className='des'>
                             <h>{productItems.name}</h>
@@ -31,9 +32,7 @@ return(
                             <h4 class='price'>$ {productItems.prise}</h4>
                             </div>
                             
-                            <a  className='cart' onClick={()=> addToCart(productItems)}>
-                                
-                                <FaCartPlus /></a>
+                             <a  onClick={()=> addToCart(productItems)}> <i className='caaart'><FaCartPlus/></i> </a> 
                              
                 </div>
                 

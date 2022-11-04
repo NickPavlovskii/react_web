@@ -95,8 +95,8 @@ img2: '/products/f1.jpg'
 },  {
 id: 8,
 name: "Adidas",
-opis: " Кеды мужские Advantage Base Velcro",
-prise: 320,
+opis: " Advantage Base Velcro",
+prise: '32,99',
 Star: 'star',
 img: '/products/a1.jpg'
 

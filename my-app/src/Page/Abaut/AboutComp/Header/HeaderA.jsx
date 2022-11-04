@@ -5,7 +5,7 @@ import './style.css'
 export const HeaderA = (props) => {
   return (
     <section id="header" >
-    <a href=""><img src="logo2.png" alt="logo" class="logo" ></img></a>
+    <a href="/"><img src="logo2.png" alt="logo" class="logo" ></img></a>
     <ul id="navbar">
         <li><a href="/" >Home</a></li>
         <li><a href="shop.html" class="Shop">Shop</a></li>
