@@ -4,7 +4,7 @@ import './style/style.css';
 
 import { BrowserRouter as Router, Routes, Route}
     from 'react-router-dom';
-import Home from './Home/Home';
+import Home from './Page/Home/Home';
 import About from './Page/Abaut/Abaut';
 
 

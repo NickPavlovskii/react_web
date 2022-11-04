@@ -1,10 +1,10 @@
 import React from 'react'
-import img1 from '../img/features/f1.png'
-import img2 from '../img/features/f2.png'
-import img3 from '../img/features/f3.png'
-import img4 from '../img/features/f4.png'
-import img5 from '../img/features/f5.png'
-import img6 from '../img/features/f6.png'
+import img1 from './../../../img/features/f1.png'
+import img2 from './../../../img/features/f2.png'
+import img3 from './../../../img/features/f3.png'
+import img4 from './../../../img/features/f4.png'
+import img5 from './../../../img/features/f5.png'
+import img6 from './../../../img/features/f6.png'
 
 export const Feature = () => {
   return (

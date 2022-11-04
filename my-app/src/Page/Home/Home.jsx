@@ -1,18 +1,18 @@
 import React from 'react';
-import {Header } from '../ComponentsHome/Header'; 
-import {Hero} from '../ComponentsHome/Hero'; 
-import {Feature} from '../ComponentsHome/Feature'; 
-import Footer from '../ComponentsHome/Footer/Footer'; 
-import Product from '../ComponentsHome/Products/Product'; 
-import Product2 from '../ComponentsHome/Products/Products2'; 
+import {Header } from './ComponentsHome/Header'; 
+import {Hero} from './ComponentsHome/Hero'; 
+import {Feature} from './ComponentsHome/Feature'; 
+import Footer from './ComponentsHome/Footer/Footer'; 
+import Product from './ComponentsHome/Products/Product'; 
+import Product2 from './ComponentsHome/Products/Products2'; 
 // import CartList from '../ComponentsHome/Products/CartList'; 
-import Banner from '../ComponentsHome/Banner/Banner'; 
-import Sm_banner from '../ComponentsHome/Banner/Sm_banner'; 
-import Banner3 from '../ComponentsHome/Banner/Banner3';
-import Newsletter from '../ComponentsHome/Newsletter/Newsletter'; 
+import Banner from './ComponentsHome/Banner/Banner'; 
+import Sm_banner from './ComponentsHome/Banner/Sm_banner'; 
+import Banner3 from './ComponentsHome/Banner/Banner3';
+import Newsletter from './ComponentsHome/Newsletter/Newsletter'; 
 
 import {useState} from "react";
-import '../style/style.css';
+
 
 
 

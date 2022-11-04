@@ -1,0 +1,24 @@
+#about-head img{
+
+    width: 50%;
+    height: auto;
+}
+
+#about-head{
+    display: flex;
+    align-items: center;
+}
+.section-p {
+    padding: 40px 80px;
+    display: flex;
+    align-items: center;
+  }
+
+  #about-head div{
+    padding-left: 40px;
+  }
+
+  .title{
+    color: rgb(7, 0, 0);
+font-size: 18px;
+  }
