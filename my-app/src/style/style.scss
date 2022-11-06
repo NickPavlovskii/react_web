@@ -239,3 +239,15 @@ p {
 		
 	
 }
+
+
+.shadow{
+	font-family: 'Rubik One', sans-serif;
+  font-size: 50px;
+  text-transform: uppercase;
+  text-shadow: -4px -4px 0px #D2EAD7;
+  background: repeating-linear-gradient(45deg, #09aca2, #09aca2 1px, white 2px, white 3px);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+ 
+}
