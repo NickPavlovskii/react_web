@@ -1,27 +1,37 @@
 import React from 'react'
 import {BsBag} from 'react-icons/bs';
 import { BiUser} from 'react-icons/bi';
+import { Link } from "react-router-dom"
 
-export const Header = (props) => {
+export const Header = ({CartItem}) => {
   return (
+    <>
     <section id="header" >
-    <a href="/"><img src="logo2.png" alt="logo" class="logo" ></img></a>
+    <Link to="/"><img src="logo2.png" alt="logo" class="logo" ></img></Link>
     <ul id="navbar" media="screen">
-        <li><a href="/" class="active">Home</a></li>
-        <li><a href="shop.html" class="Shop">Shop</a></li>
-        <li><a href="blog.html" class="Blog">Blog</a></li>
-        
-        <li><a href="/about" class="About" to="/about"  >About</a></li>
-        <li><a href="/contact" class="Contact">Contact</a></li>
-        
-            <div>  <li><a href="" class="crt"><BsBag/>  </a> <sup className='sbag' > <div className='bag'>{props.count} </div></sup></li>
-            
-            </div>
-          <li><a href="contact.html" class="link"><BiUser/></a></li>
       
+        <li><Link to="/" class="active">Home</Link></li>
+        <li><Link to="/shop" class="Shop">Shop</Link></li>
+        <li><Link to="/blog" class="Blog">Blog</Link></li>
+        
+        <li><Link to="/about" class="About"   >About</Link></li>
+        <li><Link to="/Contact" class="Contact">Contact</Link></li>
+        <div className="cart">
+        <Link to='/cart' >
+                    <li> <i> <BsBag className='icon-circle' /></i></li>
+
+             
+              
+              <span>{CartItem.length === 0 ? "" : <span className='none'> {CartItem.length}</span>} </span>
+              </Link>
+              </div>
+          <li><Link to="/user" class="link"><BiUser/></Link></li>
+
           
     </ul>
 
 </section>
+</>
   )
 }
+export default Header

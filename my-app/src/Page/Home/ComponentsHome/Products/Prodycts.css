@@ -5,8 +5,8 @@
   
 .heart{
   position: absolute;
-  top: 30px;
-  left: 225px;
+  top: 10%;
+  left: 80%;
 }
 
 .heart:hover{

@@ -14,7 +14,7 @@ function Product2 ({productItems,addToCart}) {
             id: 9,
             name: "Adidas",
             opis: "Cartoon Astronaut T-Shorts",
-            prise: '78,99',
+            price: '78,99',
             Star: 'star',
             img: '/products/n1.jpg'
     
@@ -24,7 +24,7 @@ function Product2 ({productItems,addToCart}) {
           id: 10,
           name: "Burberry",
           opis: "Cartoon Astronaut T-Shorts",
-          prise: '78',
+          price: '78',
           Star: 'star',
           img: '/products/n2.jpg'
     
@@ -34,7 +34,7 @@ function Product2 ({productItems,addToCart}) {
         id:11,
         name: "Lyle & Scott",
         opis: "Cartoon Astronaut T-Shorts",
-        prise: 32,
+        price: 32,
         Star: 'star',
         img: '/products/n3.jpg'
     
@@ -44,7 +44,7 @@ function Product2 ({productItems,addToCart}) {
       id: 12,
       name: "Lyle & Scott",
       opis: " HCartoon Astronaut T-Shorts",
-      prise: 52,
+      price: 52,
       Star: 'star',
       img: '/products/n4.jpg'
     
@@ -54,7 +54,7 @@ function Product2 ({productItems,addToCart}) {
     id: 13,
     name: "Adidas",
     opis: "Cartoon Astronaut T-Shorts",
-    prise: 320,
+    price: 320,
     Star: 'star',
     img: '/products/n5.jpg'
     
@@ -64,7 +64,7 @@ function Product2 ({productItems,addToCart}) {
     id: 14,
     name: "jack & jones",
     opis: "Бермуды  ",
-    prise: 320,
+    price: 320,
     Star: 'star',
     img: '/products/n6.jpg'
     
@@ -74,7 +74,7 @@ function Product2 ({productItems,addToCart}) {
       id: 15,
       name: "Adidas",
       opis: "Cartoon Astronaut T-Shorts",
-      prise: 320,
+      price: 320,
       Star: 'star',
       img: '/products/n7.jpg'
       
@@ -85,7 +85,7 @@ function Product2 ({productItems,addToCart}) {
         id: 15,
         name: "Adidas",
         opis: "Cartoon Astronaut T-Shorts",
-        prise: 320,
+        price: 320,
         Star: 'star',
         img: '/products/n8.jpg'
         
@@ -94,8 +94,12 @@ function Product2 ({productItems,addToCart}) {
     
     ]
     
+  
     
 return(
+
+
+  
  <section id="product1" className="section-p1">
    
     <h2>New Arrivals</h2>
@@ -115,7 +119,7 @@ return(
                             <div className='des'>
                             <h>{productItems1.name}</h>
                             <h5>{productItems1.opis}</h5>
-                            <h4 class='price'>$ {productItems1.prise}</h4>
+                            <h4 class='price'>$ {productItems1.price}</h4>
                             
                            
                             </div>

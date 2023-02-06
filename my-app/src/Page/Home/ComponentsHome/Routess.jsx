@@ -1,15 +1,13 @@
 import React from 'react';
 import Product from './Products/Product';
-import {Route, Routes} from "react-router-dom";
+import {Link, Route, Routes} from "react-router-dom";
 
 const Routess = ({productItems}) => {
   return (
     <div>
-      <Routes> 
-        <Route >
+      <Link>
         <Product/>
-        </Route>
-      </Routes>
+        </Link>
     </div>
   )
 }

@@ -29,7 +29,7 @@ return(
                             <div className='des'>
                             <h>{productItems.name}</h>
                             <h5>{productItems.opis}</h5>
-                            <h4 class='price'>$ {productItems.prise}</h4>
+                            <h4 class='price'>$ {productItems.price}</h4>
                             </div>
                             
                              <a  onClick={()=> addToCart(productItems)}> <i className='caaart'><FaCartPlus/></i> </a> 
