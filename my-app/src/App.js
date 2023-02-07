@@ -10,11 +10,16 @@ import About from './Page/Abaut/Abaut';
 import Contact from './Page/Contact/Contact';
 import Cart from "./Page/Cart/Cartpage";
 import Footer from './Page/Home/ComponentsHome/Footer/Footer'; 
+import Blogs from "./Page/Blog/Blog";
 
-
-
+import product1data from "./Page/Home/ComponentsHome/Products/products1Data";
+import blogdata from "./Page/Blog/blogItems";
 
 function App() {
+
+
+
+
  const [CartItem, setCartItem] = useState([])
  const addToCart = (product) => {  //добавление
    
@@ -47,9 +52,9 @@ function App() {
     setCartItem(CartItem.filter((item) => item.id !== product.id))
   }
 
-
-    
-    
+ 
+  const {productItems}  = product1data;
+  const {blogItems}=blogdata;
     return (
     <>  
     
@@ -60,18 +65,26 @@ function App() {
 
   
     <Routes>
-        <Route exact path='/'  element={<Home   addToCart={addToCart} />} />
+        <Route exact path='/'  element={<Home   addToCart={addToCart}  productItems={productItems}   />} />
         </Routes>
         <Routes>
+      
         <Route  exact path='/about' element={<About/>} />
         </Routes>
         <Routes>
         <Route  exact path='/Contact' element={<Contact/>} />
         
     </Routes>
+
+
+
     <Routes>
         <Route exact path='/cart'  element={<Cart  CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty} deleteQty={deleteQty} />} />
       
+        
+    </Routes>
+    <Routes>
+        <Route  exact path='/Blog' element={<Blogs blogItems={blogItems}/>}  />
         
     </Routes>
     <Footer/>

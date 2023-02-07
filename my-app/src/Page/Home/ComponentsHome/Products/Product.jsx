@@ -3,12 +3,14 @@ import './Prodycts.css'
 import { FaCartPlus} from 'react-icons/fa';
 import {AiOutlineHeart} from 'react-icons/ai';
 // import productItems from '/productItems'
+import product1data from './products1Data';
+
 
 
 function Product ({productItems,addToCart}) {
 
 
-
+ 
     
 return(
  <section id="product1" className="section-p1">
@@ -29,6 +31,7 @@ return(
                             <div className='des'>
                             <h>{productItems.name}</h>
                             <h5>{productItems.opis}</h5>
+                            <h>{productItems.Star}</h>
                             <h4 class='price'>$ {productItems.price}</h4>
                             </div>
                             
