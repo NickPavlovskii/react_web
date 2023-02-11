@@ -14,13 +14,17 @@ import Blogs from "./Page/Blog/Blog";
 
 import product1data from "./Page/Home/ComponentsHome/Products/products1Data";
 import blogdata from "./Page/Blog/blogItems";
+import Showitems from "./Page/Home/ComponentsHome/Products/Showitem";
+import Shoppage from "./Page/Shop/Shoppage";
+import Login from "./Page/User/Login";
 
 function App() {
-
+ 
 
 
 
  const [CartItem, setCartItem] = useState([])
+ 
  const addToCart = (product) => {  //добавление
    
     const productExit = CartItem.find((item) => item.id === product.id)
@@ -62,31 +66,21 @@ function App() {
 
     <Router>
     <Header CartItem={CartItem}/>
-
-  
     <Routes>
-        <Route exact path='/'  element={<Home   addToCart={addToCart}  productItems={productItems}   />} />
-        </Routes>
-        <Routes>
-      
-        <Route  exact path='/about' element={<About/>} />
-        </Routes>
-        <Routes>
+    <Route exact path='/'  element={<Home   addToCart={addToCart}  productItems={productItems}   />} />
+        <Route path='/:id' element={<Showitems productItems={productItems} addToCart={addToCart}  />}  />
+        <Route  exact path='/Shop' element={<Shoppage addToCart={addToCart}  productItems={productItems}/>} />
+        <Route  exact path='/user' element={<Login/>} />
         <Route  exact path='/Contact' element={<Contact/>} />
-        
+        <Route  exact path='/about' element={<About/>} />
+       
+        <Route path='/Blog' element={<Blogs blogItems={blogItems}/>}  />
+         <Route exact path='/cart'  element={<Cart  CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty} deleteQty={deleteQty} />} />
     </Routes>
+  
+  
+  
 
-
-
-    <Routes>
-        <Route exact path='/cart'  element={<Cart  CartItem={CartItem} addToCart={addToCart} decreaseQty={decreaseQty} deleteQty={deleteQty} />} />
-      
-        
-    </Routes>
-    <Routes>
-        <Route  exact path='/Blog' element={<Blogs blogItems={blogItems}/>}  />
-        
-    </Routes>
     <Footer/>
     </Router>
       

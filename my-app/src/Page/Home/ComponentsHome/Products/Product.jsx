@@ -1,16 +1,15 @@
 import React from 'react'
-import './Prodycts.css'
+import './products.css'
 import { FaCartPlus} from 'react-icons/fa';
 import {AiOutlineHeart} from 'react-icons/ai';
 // import productItems from '/productItems'
-import product1data from './products1Data';
+
+import { NavLink } from 'react-router-dom';
 
 
 
 function Product ({productItems,addToCart}) {
 
-
- 
     
 return(
  <section id="product1" className="section-p1">
@@ -20,21 +19,28 @@ return(
     
    
     <div className="pro-container">
-        {productItems.map((productItems, productIndex)=>{
+        {productItems.slice(0,8).map((productItems, productIndex )=>{
+            
+            
             return (
-               
-                
+             
                    
                         <div className="pro">
+                            
+               
                              <div className='heart'><AiOutlineHeart/></div>
-                            <img src={"./img/"+ productItems.img}/> 
+                             <NavLink to={'/'+productItems.id}>
+                            <img src={"./img/"+ productItems.img }  onClick={()=><NavLink to={'/'+productItems.id}>aegerg</NavLink>}/> 
+                            </NavLink>
+                            
                             <div className='des'>
                             <h>{productItems.name}</h>
                             <h5>{productItems.opis}</h5>
                             <h>{productItems.Star}</h>
-                            <h4 class='price'>$ {productItems.price}</h4>
+                            <h4 className='price'>$ {productItems.price}</h4>
+
                             </div>
-                            
+                           
                              <a  onClick={()=> addToCart(productItems)}> <i className='caaart'><FaCartPlus/></i> </a> 
                              
                 </div>

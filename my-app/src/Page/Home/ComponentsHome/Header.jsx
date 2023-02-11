@@ -11,7 +11,7 @@ export const Header = ({CartItem}) => {
     <ul id="navbar" media="screen">
       
         <li><Link to="/" class="active">Home</Link></li>
-        <li><Link to="/shop" class="Shop">Shop</Link></li>
+        <li><Link to="/Shop" class="Shop">Shop</Link></li>
         <li><Link to="/blog" class="Blog">Blog</Link></li>
         
         <li><Link to="/about" class="About"   >About</Link></li>

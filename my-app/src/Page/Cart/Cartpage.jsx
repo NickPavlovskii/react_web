@@ -1,5 +1,6 @@
 import React ,  { useState } from 'react'
 import {FaTimes, FaPlus, FaMinus} from 'react-icons/fa';
+import { NavLink } from 'react-router-dom';
 import './Cartpage.css'
 
 
@@ -54,7 +55,9 @@ const Cart = ({CartItem, addToCart, decreaseQty,deleteQty}) => {
                                             </div>
                     </td>
                     <td>
+                    <NavLink to={'/'+productItems.id}>
                     <img src={"./img/"+ productItems.img}/> 
+                    </NavLink>
                     </td>
                    
                     <td>

@@ -1,98 +1,14 @@
 import React from 'react'
-import './Prodycts.css'
+import './products.css'
 import { FaCartPlus} from 'react-icons/fa';
 import {AiOutlineHeart} from 'react-icons/ai';
-// import productItems from '/productItems'
 
 
+import { NavLink } from 'react-router-dom';
 function Product2 ({productItems,addToCart}) {
 
     
-    const productItems1 = 
-    [
-        {
-            id: 9,
-            name: "Adidas",
-            opis: "Cartoon Astronaut T-Shorts",
-            price: '78,99',
-            Star: 'star',
-            img: '/products/n1.jpg'
-    
-    
-        },
-        {
-          id: 10,
-          name: "Burberry",
-          opis: "Cartoon Astronaut T-Shorts",
-          price: '78',
-          Star: 'star',
-          img: '/products/n2.jpg'
-    
-    
-      },
-      {
-        id:11,
-        name: "Lyle & Scott",
-        opis: "Cartoon Astronaut T-Shorts",
-        price: 32,
-        Star: 'star',
-        img: '/products/n3.jpg'
-    
-        
-    },
-    {
-      id: 12,
-      name: "Lyle & Scott",
-      opis: " HCartoon Astronaut T-Shorts",
-      price: 52,
-      Star: 'star',
-      img: '/products/n4.jpg'
-    
-      
-    },
-    {
-    id: 13,
-    name: "Adidas",
-    opis: "Cartoon Astronaut T-Shorts",
-    price: 320,
-    Star: 'star',
-    img: '/products/n5.jpg'
-    
-    
-    },
-    {
-    id: 14,
-    name: "jack & jones",
-    opis: "Бермуды  ",
-    price: 320,
-    Star: 'star',
-    img: '/products/n6.jpg'
-    
-    
-    },
-    {
-      id: 15,
-      name: "Adidas",
-      opis: "Cartoon Astronaut T-Shorts",
-      price: 320,
-      Star: 'star',
-      img: '/products/n7.jpg'
-      
-      
-      },
-     
-      {
-        id: 15,
-        name: "Adidas",
-        opis: "Cartoon Astronaut T-Shorts",
-        price: 320,
-        Star: 'star',
-        img: '/products/n8.jpg'
-        
-        
-        },
-    
-    ]
+  
     
   
     
@@ -107,24 +23,27 @@ return(
     
    
     <div className="pro-container">
-        {productItems1.map((productItems1, productIndex)=>{
+        {productItems.slice(8,17).map((productItems, productIndex)=>{
            
             return (
                
                 
                    
                         <div className="pro">
+
                            <div className='heart'><AiOutlineHeart/></div>
-                            <img src={"./img/"+ productItems1.img}/> 
+                           <NavLink to={'/'+productItems.id}>
+                            <img src={"./img/"+ productItems.img}/> 
+                            </NavLink>
                             <div className='des'>
-                            <h>{productItems1.name}</h>
-                            <h5>{productItems1.opis}</h5>
-                            <h4 class='price'>$ {productItems1.price}</h4>
+                            <h>{productItems.name}</h>
+                            <h5>{productItems.opis}</h5>
+                            <h4 class='price'>$ {productItems.price}</h4>
                             
                            
                             </div>
                             
-                            <a  onClick={()=> addToCart(productItems1)}> <i className='caaart'><FaCartPlus/></i> </a> 
+                            <a  onClick={()=> addToCart(productItems)}> <i className='caaart'><FaCartPlus/></i> </a> 
                              
                 </div>
                 
