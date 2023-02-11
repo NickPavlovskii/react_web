@@ -1,0 +1,139 @@
+.contain{
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #f6f9fc;
+    
+}
+
+.cont{
+    position: relative;
+   
+    width: 100%;
+    max-width: 430px;
+    background: white;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 30px;
+}
+
+.cont .formm{
+    padding: 30px ;
+   
+}
+.cont .formm .title{
+    font-size: 27px;
+   font-weight: 600;
+}
+
+.title::before{
+    content: '';
+    position: absolute;
+    left: 31px;
+    top: 60px;
+    height: 3px;
+    width: 30px;
+    background-color:#097ef3;
+}
+
+
+.input{
+
+    margin-top: 30px;
+    position: relative;
+    width: 100%;
+   
+}
+
+.input input{
+    height: 100%;
+   padding: 5px 35px;
+   width: 100%;
+   border-bottom:2px solid #ccc ;
+   border-top: 2px solid transparent;
+}
+
+.input input:is(:focus, :valid){
+    border-bottom-color: #097ef3;
+}
+.input input:is(:focus, :valid)~ .icn{
+    color: #097ef3;
+}
+.input .icn{
+    position: absolute;
+    right: 92%;
+   top: 15%;
+   transform: translate(-50%);
+   color: #999;
+}
+
+.showhidep{
+    left: 90%;
+    cursor: pointer;
+}
+
+.checkbox-text{
+    margin-top: 20px;
+}
+
+.checkbox-content{
+    display: flex;
+    align-items: center;
+}
+
+.checkbox-content input{
+    margin: 0 8px -2px 4px;
+    accent-color: #4070f4;
+}
+
+.formm a{
+    color: #4070f4;
+}
+.formm a:hover{
+    text-decoration:underline;
+}
+
+.button{
+    margin-top: 35px;
+    margin-bottom: 10px;
+}
+
+.button input{
+   
+    padding: 15px 10px;
+    border: none;
+    color: white;
+   background-color: #097ef3;
+   font-size: 17px;
+   font-weight: 500;
+   letter-spacing: 1px;
+   border-radius: 6px;
+   cursor: pointer;
+   transition: all 0.3s ease;
+}
+
+.button input:hover{
+    background-color: #114df1;
+}
+
+.formm .login-signup{
+    margin-top: 30px;
+    text-align: center;
+}
+
+.forms input,
+ .forms button {
+  border: none;
+  outline: none;
+  background-color: none;
+
+
+}
+
+  
+  
+  .d_flex{
+    display: flex;
+    justify-content: space-between;
+  }
+  

@@ -18,7 +18,7 @@ const Cart = ({CartItem, addToCart, decreaseQty,deleteQty}) => {
    
 
       <section className='cart-itm section-p1'  >
-            <div className="container d_flex">
+            <div className="container">
                 <div className="cart_details">
                     {CartItem.length===0 && <h1 className='no-items product'>No items add cart </h1>  }
         
